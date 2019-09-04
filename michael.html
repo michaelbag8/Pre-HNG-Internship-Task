@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./michael.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -170,6 +171,41 @@
                 </article>
         </section>
     </div>
+    <div id="modal-with-form" class="contact-modal hide-modal">
+        <div class="container">  
+                <form id="contact-form">
+                  <h3>Reach Me Here</h3>
+                  <h4>Fill This Form To Get In Touch With Me</h4>
+                  <span id="close-btn" onclick="visible()">&times;</span>
+
+                  <fieldset>
+                    <input type="text" id="title" required minlength="4" autofocus placeholder="Message Title">
+                    
+                  </fieldset>
+
+                  
+                  <fieldset>
+                    <input type="text" id="name" required minlength="4" placeholder="Your Name">
+                    
+                  </fieldset>
+                  <fieldset>
+                    <input type="email" id="email" required placeholder="Email Here...">
+                    
+                  </fieldset>
+                  
+                 
+                  <fieldset>
+                    <textarea id="message" minlength="20" required placeholder="Your Message Here..."></textarea>
+                  </fieldset>
+                  <fieldset>
+                    <button name="submit" id="contact-submit"><i class="fa fa-send fa-2x"></i>Submit</button>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+        <div class="contact-modal-open-btn" id="hideBtn" onclick="hide()">
+            <h2><i class="fa fa-envelope">Contact Me</i></h2>
+        </div>
         <!-- REFERENCE  -->
         <footer>
             <header >
@@ -202,5 +238,7 @@
             </div>
         </footer>
     </main>
+    <!-- Javascript  -->
+    <script src="./form.js"></script>
 </body>
 </html>
